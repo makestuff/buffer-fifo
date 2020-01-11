@@ -41,6 +41,5 @@ proc do_test {gui} {
   } else {
     cli_run "-gBLOCK_RAM=0"
     cli_run "-gBLOCK_RAM=1"
-    finish
   }
 }

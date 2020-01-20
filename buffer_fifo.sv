@@ -18,7 +18,7 @@
 //
 // Single-clock FIFO, for buffering within a single clock-domain.
 //
-module buffer_fifo#(
+module makestuff_buffer_fifo#(
     parameter int WIDTH = 32,
     parameter int DEPTH = 4,
     parameter int FI_CHUNKSIZE = 2**DEPTH/4,
@@ -56,7 +56,7 @@ module buffer_fifo#(
   assign oData_out = oEmpty ? 'X : oData;
 
   // The encapsulated FIFO
-  buffer_fifo_impl#(
+  makestuff_buffer_fifo_impl#(
     .WIDTH        (WIDTH),
     .DEPTH        (DEPTH),
     .AF_THR       (2**DEPTH-FI_CHUNKSIZE),

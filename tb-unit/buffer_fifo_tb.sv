@@ -41,7 +41,7 @@ module buffer_fifo_tb#(
   logic iReadyChunk, oValidChunk;
   Depth depth;
 
-  buffer_fifo#(WIDTH, DEPTH, CHUNK, CHUNK, BLOCK_RAM) uut(
+  makestuff_buffer_fifo#(WIDTH, DEPTH, CHUNK, CHUNK, BLOCK_RAM) uut(
     sysClk, reset, depth,
     iData, iValid, iReady, iReadyChunk,
     oData, oValid, oValidChunk, oReady);

@@ -36,7 +36,7 @@
 // synopsys translate_off
 `timescale 1 ps / 1 ps
 // synopsys translate_on
-module buffer_fifo_impl#(
+module makestuff_buffer_fifo_impl#(
     parameter int WIDTH,
     parameter int DEPTH,
     parameter int AF_THR,

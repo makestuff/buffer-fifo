@@ -1,7 +1,7 @@
 ## Buffer FIFO
 You can git submodule this repo to provide a generic single-clock FIFO with configurable thresholds.
 
-**Dependencies:** [`makestuff:altera-libs`](https://github.com/makestuff/altera-libs)
+**Dependencies:** [`makestuff:altera-libs`](https://github.com/makestuff/altera-libs).
 
 See [BuildInfra](https://github.com/makestuff/ws-tools/blob/master/README.md) for details of how to incorporate this into your project.
 
